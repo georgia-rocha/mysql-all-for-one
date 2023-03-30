@@ -5,7 +5,7 @@ Colocar em prática os  conceitos de SQL abordados na segunda sessão de back-en
 <summary><strong>‼️ Antes de começar a desenvolver</strong></summary><br />
 
 1. Clone o repositório
-* `git clone git@github.com:tryber/sd-027-b-project-docker-todo-list.git`
+* `git clone git@github.com:georgia-rocha/mysql-all-for-one.git`
 * Entre na pasta do repositório que você acabou de clonar:
 
 2. Instale as dependências:
