@@ -2,61 +2,26 @@
 Colocar em prática os  conceitos de SQL abordados na segunda sessão de back-end usando Docker e utilizando o bando de dados Northwind.
 
 <details>
-<summary><strong>‼️ Antes de começar a desenvolver</strong></summary><br />
+<summary><strong>Para clonar e testar</strong></summary><br />
 
 1. Clone o repositório
 * `git clone git@github.com:georgia-rocha/mysql-all-for-one.git`
 * Entre na pasta do repositório que você acabou de clonar:
 
 2. Instale as dependências:
-  * `npm install`
+* `npm install`
 
-* Verifique se os testes estão executando:
-  * `npm test` (os testes devem rodar e falhar)
-
-3. Crie uma branch a partir da branch `master`
-
-* Verifique que você está na branch `master`
-  * Exemplo: `git branch`
-* Se não estiver, mude para a branch `master`
-  * Exemplo: `git checkout master`
-* Agora, crie uma branch onde você vai guardar os commits do seu projeto
-  * Exemplo:
-    * `git checkout -b <nome>-project-docker-todo-list`
-
-4. Cria os arquivos sql touch desafio{1..27}.sql;
-
-5. Roda o compose docker-compose up -d;
-
-6. Roda o container docker exec -it all_for_one bash;
-
-7. Dentro do container instale as dependências com o npm install;
+3. Verifique se os testes estão executando:
+  * `npm test`
+  
+ ## O que foi necessário para iniciar o projeto
  
-<details>   
-<summary><strong>Usando Docker</strong></summary><br />
-
-  **:warning: Antes de começar, seu docker-compose precisa estar na versão 1.29 ou superior. [Veja aqui](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-compose-on-ubuntu-20-04-pt) ou [na documentação](https://docs.docker.com/compose/install/) como instalá-lo. No primeiro artigo, você pode substituir onde está com `1.26.0` por `1.29.2`.**
-
-  > :information_source: Rode os serviços `node` e `db` com o comando `docker-compose up -d`.
-
-- Lembre-se de parar o `mysql` se estiver usando localmente na porta padrão (`3306`), ou adapte, caso queria fazer uso da aplicação em containers
-- Esses serviços irão inicializar um container chamado `all_for_one` e outro chamado `all_for_one_db`.
-- A partir daqui você pode rodar o container `all_for_one` via CLI ou abri-lo no VS Code.
-
-  > :information_source: Use o comando `docker exec -it all_for_one bash`.
-
-- Ele te dará acesso ao terminal interativo do container criado pelo compose, que está rodando em segundo plano.
-- As credencias de acesso ao banco de dados estão definidas no arquivo `docker-compose.yml`, e são acessíveis no container através das variáveis de ambiente `MYSQL_USER` e `MYSQL_PASSWORD`. 💡
-
-  > :information_source: Instale as dependências [**Caso existam**] com `npm install`. (Instale dentro do container)
-
-- **:warning: Atenção:** Caso opte por utilizar o Docker, **TODOS** os comandos disponíveis no `package.json` (npm start, npm test, npm run dev, ...) devem ser executados **DENTRO** do container, ou seja, no terminal que aparece após a execução do comando `docker exec` citado acima.
-
-- **:warning: Atenção:** O **git** dentro do container não vem configurado com suas credenciais. Ou faça os commits fora do container, ou configure as suas credenciais do git dentro do container.
-
-- **:warning: Atenção:** Não rode o comando npm audit fix! Ele atualiza várias dependências do projeto, e essa atualização gera conflitos com o avaliador.
-
-</details>
+* Criar uma nova branch a partir da main - git checkout -b;
+* Criar os arquivos que iriam ser usados para guardar o código usado para manipulação das tabalas do banco de dados - touch desafio{1..27}.sql;
+* Rodar o compose docker-compose up -d;
+* Rodar o container docker exec -it all_for_one bash;
+* Instalar dentro do container as dependências com o npm install;
+ **:warning: O docker-compose precisou estar na versão 1.29 ou superior.
 </details>
 
 ## Requisitos Obrigatórios 100%
