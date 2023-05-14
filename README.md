@@ -5,8 +5,15 @@ Colocar em prática os  conceitos de SQL abordados na segunda sessão de back-en
 <summary><strong>Para clonar e testar</strong></summary><br />
 
 1. Clone o repositório
-* `git clone git@github.com:georgia-rocha/mysql-all-for-one.git`
-* Entre na pasta do repositório que você acabou de clonar:
+  ```
+git clone git@github.com:georgia-rocha/mysql-all-for-one.git
+```
+
+2. Entre na pasta do repositório que você acabou de clonar:
+ 
+```
+  cd mysql-all-for-one
+```
 
 <details>
 <summary>2. Escolha se vai rodar o projeto localmente ou pelo Docker e faça o npm install:</summary>
@@ -120,16 +127,11 @@ Colocar em prática os  conceitos de SQL abordados na segunda sessão de back-en
 
 
 3. Verifique se os testes estão executando:
-  * `npm test`
+  ```
+  npm test
+  ```
   
- ## O que foi necessário para iniciar o projeto
- 
-* Criar uma nova branch a partir da main - git checkout -b;
-* Criar os arquivos que iriam ser usados para guardar o código usado para manipulação das tabalas do banco de dados - touch desafio{1..27}.sql;
-* Rodar o compose docker-compose up -d;
-* Rodar o container docker exec -it all_for_one bash;
-* Instalar dentro do container as dependências com o npm install;
- **:warning: O docker-compose precisou estar na versão 1.29 ou superior.
+ ** O docker-compose precisou estar na versão 1.29 ou superior.**
 </details>
 
 ## Requisitos Obrigatórios 100%
